@@ -1,0 +1,78 @@
+# ==============================================================================
+# MoveMate — Git Ignore Configuration
+# ==============================================================================
+
+# Build & Distribution Artifacts ("dist" / "dics")
+dist/
+**/dist/
+build/
+**/build/
+out/
+**/out/
+target/
+backend/target/
+**/target/
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+**/node_modules/
+.pnp/
+.pnp.js
+
+# Documentation (matches "docs" / "dics" request)
+docs/
+dics/
+
+# Java & JVM compiled outputs
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Environment files & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & Editor specific files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS Metadata & Cache
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Database & Runtime stores
+*.h2.db
+*.db
+*.sqlite

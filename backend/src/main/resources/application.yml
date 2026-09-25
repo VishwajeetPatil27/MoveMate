@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: movemate-backend
+  datasource:
+    url: ${DATABASE_URL:jdbc:h2:mem:movemate_db;DB_CLOSE_DELAY=-1;MODE=MySQL;DATABASE_TO_LOWER=TRUE}
+    username: ${DATABASE_USERNAME:sa}
+    password: ${DATABASE_PASSWORD:}
+    driver-class-name: ${DATABASE_DRIVER:org.h2.Driver}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      pool-name: MoveMateHikariCP
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:c3VwZXItc2VjcmV0LWtleS1mb3ItbW92ZW1hdGUtand0LWF1dGhlbnRpY2F0aW9uLXNlY3VyaXR5LTI1NmJpdHM=}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}
+    refresh-expiration-ms: ${JWT_REFRESH_EXPIRATION_MS:604800000}
+
+logging:
+  level:
+    root: INFO
+    com.movemate: DEBUG
+    org.hibernate.SQL: INFO

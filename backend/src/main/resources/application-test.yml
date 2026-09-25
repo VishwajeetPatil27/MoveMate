@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:movemate_test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop
+    show-sql: false
+
+app:
+  jwt:
+    secret: c3VwZXItc2VjcmV0LWtleS1mb3ItbW92ZW1hdGUtand0LWF1dGhlbnRpY2F0aW9uLXNlY3VyaXR5LTI1NmJpdHM=
+    expiration-ms: 86400000
+    refresh-expiration-ms: 604800000
+
+logging:
+  level:
+    root: INFO
+    com.movemate: INFO

@@ -1,0 +1,16 @@
+package com.movemate.notification.entity;
+
+public enum NotificationType {
+    POST_LIKED,
+    POST_COMMENTED,
+    COMMENT_REPLIED,
+    NEW_MESSAGE,
+    COMMUNITY_INVITATION,
+    COMMUNITY_ANNOUNCEMENT,
+    EVENT_CREATED,
+    EVENT_UPDATED,
+    EVENT_CANCELLED,
+    EVENT_REMINDER,
+    ACCOMMODATION_MESSAGE,
+    SYSTEM
+}
