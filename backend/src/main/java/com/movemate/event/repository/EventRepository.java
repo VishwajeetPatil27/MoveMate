@@ -27,4 +27,8 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     );
 
     Page<Event> findByCommunityIdAndStatusOrderByEventDateAsc(Long communityId, EventStatus status, Pageable pageable);
+
+    boolean existsByTitle(String title);
+
+    java.util.Optional<Event> findFirstByTitle(String title);
 }

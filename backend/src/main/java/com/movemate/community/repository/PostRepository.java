@@ -22,4 +22,8 @@ public interface PostRepository extends JpaRepository<Post, Long> {
     Page<Post> findActivePostsByCommunityAndType(@Param("communityId") Long communityId, @Param("postType") PostType postType, Pageable pageable);
 
     Optional<Post> findByIdAndStatusNot(Long id, PostStatus status);
+
+    boolean existsByTitle(String title);
+
+    Optional<Post> findFirstByTitle(String title);
 }

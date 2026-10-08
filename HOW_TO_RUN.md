@@ -6,19 +6,18 @@ This guide provides **exact, copy-and-paste commands** to run the complete MoveM
 
 ## 🔑 Demo Login Credentials
 
-You can log in directly using any of the pre-configured demo credentials below, or click **"Get Started" / "Sign Up"** in the web app to create a new account:
+You can log in directly using the **Demo Quick-Fill buttons on the Login page** (1-click auto-fill for Member, Provider, or Admin), or use any of the credentials below:
 
-### 1. 🛡️ System Administrator Account
-- **Email:** `admin@movemate.com`
-- **Password:** `Password123!`
-- **Role:** `ADMIN` (Access to Admin Dashboard, Analytics, User Management, Moderation Queue, Audit Logs)
+| Persona / Role | Email | Password | Role | Description & Primary Access |
+| :--- | :--- | :--- | :---: | :--- |
+| **🛡️ System Admin** | `admin@movemate.com` | `Password123!` | `ADMIN` | Complete governance, analytics dashboard, moderation queue, audit logs |
+| **👤 Primary Relocator** | `user@movemate.com` | `Password123!` | `USER` | Rohan Sharma moving Mumbai ➔ Pune. Has pre-seeded chats, favorites, notifications |
+| **🏢 Verified Provider** | `provider.services@example.com`| `Password123!` | `USER` | MoveMate Verified Partner managing local services and PG listings |
+| **💻 Tech Lead Pune** | `aarav.patil@example.com` | `Password123!` | `USER` | Leader of Pune IT Professionals, tech guide author, accommodation host |
+| **🎨 Product Designer** | `priya.sharma@example.com` | `Password123!` | `USER` | Bengaluru Tech Hub lead, Koramangala listing host |
+| **🎓 Student Pune** | `ananya.verma@example.com` | `Password123!` | `USER` | Students & Scholars in Pune lead, campus guide author |
 
-### 2. 👤 Regular Relocator User Account
-- **Email:** `user@movemate.com`
-- **Password:** `Password123!`
-- **Role:** `USER` (Access to Communities, Feed, Messages, Housing, Services, Events)
-
-### 3. ✍️ Register a New Account
+### ✍️ Register a New Account
 - Click **"Get Started"** or **"Sign Up"** on `http://localhost:5173`.
 - Enter your Full Name, Email, and Password to create a brand-new user profile.
 

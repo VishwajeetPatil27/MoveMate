@@ -218,6 +218,116 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigateRegister, onSucc
           </div>
         </div>
 
+        {/* Demo Accounts Quick-Fill Section */}
+        <div style={{
+          marginBottom: '1.5rem',
+          padding: '0.75rem',
+          backgroundColor: '#F8FAFC',
+          border: '1px dashed #CBD5E1',
+          borderRadius: 'var(--radius-lg, 0.75rem)'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: '0.5rem'
+          }}>
+            <span style={{
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              color: 'var(--color-text-muted, #64748B)'
+            }}>
+              Demo Quick-Fill
+            </span>
+            <span style={{
+              fontSize: '0.7rem',
+              color: '#0D9488',
+              backgroundColor: '#CCFBF1',
+              padding: '1px 6px',
+              borderRadius: '9999px',
+              fontWeight: 600
+            }}>
+              Evaluation Mode
+            </span>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '6px' }}>
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategory('USER');
+                setEmail('user@movemate.com');
+                setPassword('Password123!');
+                setFormError(null);
+              }}
+              style={{
+                padding: '0.4rem 0.25rem',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                color: '#0F172A',
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #E2E8F0',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                textAlign: 'center',
+                transition: 'all 0.15s'
+              }}
+              title="Demo Member: user@movemate.com"
+            >
+              Demo User
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategory('SERVICE_PROVIDER');
+                setEmail('provider.services@example.com');
+                setPassword('Password123!');
+                setFormError(null);
+              }}
+              style={{
+                padding: '0.4rem 0.25rem',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                color: '#0369A1',
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #BAE6FD',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                textAlign: 'center',
+                transition: 'all 0.15s'
+              }}
+              title="Demo Provider: provider.services@example.com"
+            >
+              Demo Provider
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategory('ADMIN');
+                setEmail('admin@movemate.com');
+                setPassword('Password123!');
+                setFormError(null);
+              }}
+              style={{
+                padding: '0.4rem 0.25rem',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                color: '#B91C1C',
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #FECACA',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                textAlign: 'center',
+                transition: 'all 0.15s'
+              }}
+              title="Demo Admin: admin@movemate.com"
+            >
+              Demo Admin
+            </button>
+          </div>
+        </div>
+
         {/* Error Feedback Banner */}
         {(formError || error) && (
           <div style={{

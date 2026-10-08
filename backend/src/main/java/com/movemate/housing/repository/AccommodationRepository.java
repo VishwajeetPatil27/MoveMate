@@ -41,4 +41,8 @@ public interface AccommodationRepository extends JpaRepository<Accommodation, Lo
     );
 
     List<Accommodation> findByOwnerId(Long ownerId);
+
+    boolean existsByTitle(String title);
+
+    java.util.Optional<Accommodation> findFirstByTitle(String title);
 }

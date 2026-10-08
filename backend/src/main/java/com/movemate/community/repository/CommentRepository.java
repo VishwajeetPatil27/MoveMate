@@ -14,6 +14,8 @@ public interface CommentRepository extends JpaRepository<Comment, Long> {
 
     List<Comment> findByPostIdAndStatusNot(Long postId, CommentStatus status, Sort sort);
 
+    List<Comment> findByPostIdAndStatusNot(Long postId, CommentStatus status);
+
     long countByPostIdAndStatusNot(Long postId, CommentStatus status);
 
     Optional<Comment> findByIdAndStatusNot(Long id, CommentStatus status);

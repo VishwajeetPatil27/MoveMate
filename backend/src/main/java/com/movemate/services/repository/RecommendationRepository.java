@@ -30,4 +30,8 @@ public interface RecommendationRepository extends JpaRepository<Recommendation, 
     List<Recommendation> findByStatusAndLocationId(ServiceStatus status, Long locationId);
 
     List<Recommendation> findByCreatorId(Long creatorId);
+
+    boolean existsByTitle(String title);
+
+    java.util.Optional<Recommendation> findFirstByTitle(String title);
 }
