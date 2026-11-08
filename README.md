@@ -26,7 +26,7 @@ For detailed setup, database configuration, and test commands, see [HOW_TO_RUN.m
 
 - **Backend:** Java 21, Spring Boot 3.2.3, Spring Security 6, JWT, Spring Data JPA, Spring STOMP WebSockets
 - **Database:** MySQL 8.0, Flyway Migrations (`V1` to `V9`)
-- **Frontend:** React 18, TypeScript, Vite, Vanilla CSS Design System
+- **Frontend:** React 18, JavaScript (JS/JSX), Vite, Vanilla CSS Design System
 
 ---
 

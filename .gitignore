@@ -41,6 +41,7 @@ dics/
 .env.test.local
 .env.production.local
 *.local
+*.md
 
 # Logs
 logs/
